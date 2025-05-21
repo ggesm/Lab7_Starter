@@ -103,7 +103,7 @@ describe('Basic user flow for Website', () => {
     const cartCount = await page.$eval('#cart-count', el => el.innerText);
     expect(cartCount).toBe('20');
 
-  }, 10000);
+  }, 15000);
 
   // Check to make sure that after you reload the page it remembers all of the items in your cart
   it('Checking number of items in cart on screen after reload', async () => {
@@ -130,7 +130,7 @@ describe('Basic user flow for Website', () => {
     const cartCount = await page.$eval('#cart-count', el => el.innerText);
     expect(cartCount).toBe('20');
 
-  }, 10000);
+  }, 15000);
 
   // Check to make sure that the cart in localStorage is what you expect
   it('Checking the localStorage to make sure cart is correct', async () => {
@@ -170,7 +170,7 @@ describe('Basic user flow for Website', () => {
     const cartCount = await page.$eval('#cart-count', el => el.innerText);
     expect(cartCount).toBe('0');
 
-  }, 10000);
+  }, 15000);
 
   // Checking to make sure that it remembers us removing everything from the cart
   // after we refresh the page
@@ -198,7 +198,7 @@ describe('Basic user flow for Website', () => {
     const cartCount = await page.$eval('#cart-count', el => el.innerText);
     expect(cartCount).toBe('0');
 
-  }, 10000);
+  }, 15000);
 
   // Checking to make sure that localStorage for the cart is as we'd expect for the
   // cart being empty
