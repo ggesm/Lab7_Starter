@@ -20,7 +20,7 @@
    Answer:
 
    * Using WebP files for images instead. Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. 
-   * Add a <meta name="viewport">` tag with width or initial-scale to ensure that the site scales properly on different screen sizes
+   * Add a `<meta name="viewport">` tag with width or initial-scale to ensure that the site scales properly on different screen sizes
    * If the LCP element is dynamically added to the page, you should preload the image in order to improve LCP.
 
 
